@@ -1,14 +1,31 @@
-.slide {
-  width: 420px;
-  img {
-    object-fit: contain;
-    height: 600px;
-  }
-}
-
 .navegation-arrows {
   img {
     width: 72px;
     height: auto;
+  }
+}
+
+.carrousel {
+  display: flex;
+  flex-direction: row;
+}
+
+.slide {
+  padding-left: 20px;
+  position: relative;
+
+  img {
+    object-fit: cover;
+    height: 600px;
+    width: 420px;
+  }
+  
+  p {
+    font-weight: bold;
+    position: absolute;
+    top: 500px;
+    color: white;
+    text-align: center;
+    z-index: 100;
   }
 }
