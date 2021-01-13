@@ -8,24 +8,28 @@
 .carrousel {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .slide {
   padding-left: 20px;
-  position: relative;
-
+  
   img {
     object-fit: cover;
     height: 600px;
     width: 420px;
+    position: relative;
   }
-  
+
   p {
-    font-weight: bold;
-    position: absolute;
-    top: 500px;
+    width: 420px;
     color: white;
+    font-weight: bold;
+    position: relative;
     text-align: center;
-    z-index: 100;
+    top: 85%;
+    left: 0;
+    transform: translate(-50% -50%);
+    z-index: 2;
   }
 }
